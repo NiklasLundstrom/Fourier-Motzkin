@@ -1,0 +1,270 @@
+        -:    0:Source:fast.c
+        -:    0:Graph:fast.gcno
+        -:    0:Data:fast.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include <stdbool.h>
+        -:    2:#include <stdlib.h>
+        -:    3:#include <limits.h>
+        -:    4:#include "error.h"
+        -:    5:#include <stdio.h>
+        -:    6:int reduce_count = 0;
+        -:    7:
+    #####:    8:void bp(){};
+        -:    9:
+ 14522390:   10:void end()
+        -:   11:{
+        -:   12://    printf("had to reduce in ratdiv %d times\n", reduce_count);
+ 14522390:   13:};
+        -:   14:struct rat
+        -:   15:{
+        -:   16:    int a;
+        -:   17:    unsigned int b; // a/b
+        -:   18:};
+        -:   19:
+436589804:   20:struct rat ratdiv(struct rat *rat1, struct rat *rat2)
+        -:   21:{
+        -:   22:    // TODO use pointer to output instead of actually returning it
+        -:   23:    struct rat outrat;
+436589804:   24:        outrat.a = rat1->a * ( (rat2->a > 0) - (rat2->a < 0) ); // * sign(rat2->a)
+436589804:   25:        outrat.b = labs(rat2->a);
+436589804:   26:        return outrat;
+        -:   27:}
+        -:   28:
+138587198:   29:bool ratGreaterThan(struct rat *rat1, struct rat *rat2)
+        -:   30:{
+        -:   31:    // TODO division is slow!
+        -:   32:    //return ((float) rat1->a)/((float) rat1->b) > ((float) rat2->a)/((float) rat2->b);
+138587198:   33:    if ((rat1->a > 0) && (rat2->a <= 0))
+        -:   34:    {
+ 22805756:   35:        return true;
+115781442:   36:    }else if ((rat1->a < 0) && (rat2->a >= 0))
+        -:   37:    {
+ 23748005:   38:        return false;
+        -:   39:    }
+ 92033437:   40:    return ((long) rat1->a)*((long) rat2->b) > ((long) rat2->a)*((long) rat1->b);
+        -:   41:}
+        -:   42:
+        -:   43:
+468164482:   44:struct rat ratsub(struct rat *rat1, struct rat *rat2)
+        -:   45:{
+        -:   46:    struct rat outrat;
+        -:   47:    // TODO is it possible to speed this up?
+468164482:   48:    outrat.a = rat1->a * rat2->b - rat1->b * rat2->a;
+468164482:   49:    outrat.b = rat1->b * rat2->b;
+468164482:   50:    return outrat;
+        -:   51:}
+        -:   52:
+ 14522390:   53:bool fm(size_t rows, size_t cols, signed char a[rows][cols], signed char c[rows])
+ 14522390:   54:{
+        -:   55:// 1) Initialise
+ 14522390:   56:        reduce_count=0;
+ 14522390:   57:        size_t r = rows;
+ 14522390:   58:        size_t s = cols;
+ 14522390:   59:        struct rat *t = malloc(r*s*sizeof(struct rat));
+ 14522390:   60:        struct rat *q = malloc(r * sizeof(struct rat));
+ 72349635:   61:        for (size_t i=0; i<r; i++)
+        -:   62:        {
+231305862:   63:            for (size_t j=0; j<s; j++)
+        -:   64:            {
+        -:   65:                //TODO memcpy eller nåt?
+173478617:   66:                t[i*s + j].a = a[i][j];
+173478617:   67:                t[i*s + j].b = 1;
+        -:   68:            }
+ 57827245:   69:            q[i].a = c[i];
+ 57827245:   70:            q[i].b = 1;
+        -:   71:        }
+        -:   72:while(true)//-------------loop
+        -:   73:{
+        -:   74:
+        -:   75:// 2) rearrange and 3) devide
+ 33554349:   76:size_t pos = 0, neg = 0, zer = 0;
+296434889:   77:for (size_t i = 0; i<r; i++)
+        -:   78:{
+262880540:   79:    if (t[i*s + s-1].a < 0)
+        -:   80:    {
+143153620:   81:        neg++;
+        -:   82:    }
+119726920:   83:    else if (t[i*s + s-1].a > 0)
+        -:   84:    {
+115420450:   85:        pos++;
+        -:   86:    }
+        -:   87:    else
+        -:   88:    {
+  4306470:   89:        zer++;
+        -:   90:    }
+        -:   91:}
+        -:   92:
+ 33554349:   93:struct rat *t_pos = malloc(pos * (s-1) * sizeof(struct rat));
+ 33554349:   94:struct rat *q_pos = malloc(pos * sizeof(struct rat));
+ 33554349:   95:struct rat *t_neg = malloc(neg * (s-1) * sizeof(struct rat));
+ 33554349:   96:struct rat *q_neg = malloc(neg * sizeof(struct rat));
+ 33554349:   97:struct rat *t_zer = malloc(zer * (s-1) * sizeof(struct rat));
+ 33554349:   98:struct rat *q_zer = malloc(zer * sizeof(struct rat));
+ 33554349:   99:size_t poscount = 0, negcount = 0, zercount = 0;
+296434889:  100:for (size_t i = 0; i<r; i++)
+        -:  101:{
+262880540:  102:    struct rat *t_last = &t[i*s + s-1];
+        -:  103:    //TODO slow
+262880540:  104:    if (t_last->a < 0)
+        -:  105:    {
+        -:  106:        // add row to t_pos
+230570938:  107:        for (size_t j = 0; j<s-1; j++)
+        -:  108:        {
+ 87417318:  109:            t_neg[negcount*(s-1) + j] = ratdiv(&t[i*s + j], t_last);
+        -:  110:        }
+143153620:  111:        q_neg[negcount] = ratdiv(&q[i], t_last);
+143153620:  112:        negcount++;
+        -:  113:    }
+119726920:  114:    else if (t_last->a > 0)
+        -:  115:    {
+        -:  116:        // add rowq to t_neg
+206018866:  117:        for (size_t j = 0; j<s-1; j++)
+        -:  118:        {
+ 90598416:  119:            t_pos[poscount*(s-1) + j] = ratdiv(&t[i*s + j], t_last);
+        -:  120:        }
+115420450:  121:        q_pos[poscount] = ratdiv(&q[i], t_last);
+115420450:  122:        poscount++;
+        -:  123:    }
+        -:  124:    else
+        -:  125:    {
+        -:  126:        // add row to t_zer
+ 12919408:  127:        for (size_t j = 0; j<(s-1); j++)
+        -:  128:        {
+  8612938:  129:            t_zer[zercount*(s-1) + j] = t[i*s + j];
+        -:  130:        }
+  4306470:  131:        q_zer[zercount] = q[i];
+  4306470:  132:        zercount++;
+        -:  133:    }
+        -:  134:}               
+        -:  135:// free t and q
+ 33554349:  136:free(t);
+ 33554349:  137:free(q);
+        -:  138:
+        -:  139:// 4) if s==1 (base case)
+ 33554349:  140:if (s == 1)
+        -:  141:{
+  4510201:  142:    struct rat b = {INT_MIN, 1};
+ 92096281:  143:    for (size_t i = 0; i<neg; i++)
+        -:  144:    {
+ 87586080:  145:        if (ratGreaterThan(&q_neg[i], &b))
+        -:  146:        {
+ 13163692:  147:            b = q_neg[i];
+        -:  148:        }
+        -:  149:    }
+        -:  150:    
+  4510201:  151:    struct rat B = {INT_MAX, 1};
+ 51001118:  152:    for (size_t i = 0; i<pos; i++)
+        -:  153:    {
+ 46490917:  154:        if (!ratGreaterThan(&q_pos[i], &B)) //q<=B
+        -:  155:        {
+ 11957871:  156:            B = q_pos[i];
+        -:  157:        }
+        -:  158:    }
+        -:  159:
+        -:  160:    // if b > B
+  4510201:  161:    if (ratGreaterThan(&b, &B))
+        -:  162:    {
+  1948058:  163:        free(t_pos);
+  1948058:  164:        free(q_pos);
+  1948058:  165:        free(t_neg);
+  1948058:  166:        free(q_neg);
+  1948058:  167:        free(t_zer);
+  1948058:  168:        free(q_zer);
+  1948058:  169:        end();
+  1948058:  170:        return false;
+        -:  171:    }
+        -:  172:
+        -:  173:    // q_zer[i] < 0 for some i
+        -:  174:    /*for (size_t i = 0; i<zer; i++)
+        -:  175:    {
+        -:  176:        if (q_zer[i].a < 0)
+        -:  177:        {
+        -:  178:            free(t_pos);
+        -:  179:            free(q_pos);
+        -:  180:            free(t_neg);
+        -:  181:            free(q_neg);
+        -:  182:            free(t_zer);
+        -:  183:            free(q_zer);
+        -:  184:            end();
+        -:  185:            return false;
+        -:  186:        }
+        -:  187:    }*/
+        -:  188:
+        -:  189:    // else
+  2562143:  190:    free(t_pos);
+  2562143:  191:    free(q_pos);
+  2562143:  192:    free(t_neg);
+  2562143:  193:    free(q_neg);
+  2562143:  194:    free(t_zer);
+  2562143:  195:    free(q_zer);
+  2562143:  196:    end();
+  2562143:  197:    return true;
+        -:  198:
+        -:  199:}
+        -:  200:// 5) and 6) add all new equations
+ 29044148:  201:s -= 1;
+ 29044148:  202:r = zer + pos*neg;
+ 29044148:  203:if (r==0)
+        -:  204:{
+ 10012189:  205:    free(t_pos);
+ 10012189:  206:    free(q_pos);
+ 10012189:  207:    free(t_neg);
+ 10012189:  208:    free(q_neg);
+ 10012189:  209:    free(t_zer);
+ 10012189:  210:    free(q_zer);
+ 10012189:  211:    end();
+ 10012189:  212:    return true;
+        -:  213:}
+        -:  214:
+ 19031959:  215:struct rat *t_new = malloc((pos*neg + zer) * s * sizeof(struct rat));
+ 19031959:  216:struct rat *q_new = malloc((pos*neg + zer)*sizeof(struct rat));
+ 19031959:  217:int row_count = 0;
+ 75025333:  218:for (size_t i = 0; i<pos; i++)
+        -:  219:{
+256740199:  220:    for (size_t j = 0; j<neg; j++)
+        -:  221:    {
+        -:  222:       // fix t
+468164482:  223:        for (size_t c = 0; c<s; c++)
+        -:  224:        {
+        -:  225:            //TODO slow
+267417657:  226:            t_new[row_count*s + c] = ratsub(&t_pos[i*s + c], &t_neg[j*s + c]);
+        -:  227:        }
+        -:  228:       //fix q
+200746825:  229:       q_new[row_count] = ratsub(&q_pos[i], &q_neg[j]);
+        -:  230:       // increase row_count
+200746825:  231:       row_count++;
+        -:  232:    }
+        -:  233:
+        -:  234:}
+        -:  235:// free t/q pos/neg
+ 19031959:  236:free(t_pos);
+ 19031959:  237:free(q_pos);
+ 19031959:  238:free(t_neg);
+ 19031959:  239:free(q_neg);
+        -:  240:
+ 23338429:  241:for (size_t i = 0; i<zer; i++)
+        -:  242:{
+ 12919408:  243:    for(size_t c = 0; c<s; c++)
+        -:  244:    {
+  8612938:  245:        t_new[row_count*s + c] = t_zer[i*s + c];
+        -:  246:    }
+  4306470:  247:    q_new[row_count] = q_zer[i];
+  4306470:  248:    row_count++;
+        -:  249:}
+        -:  250:// free t/q zer
+ 19031959:  251:free(t_zer);
+ 19031959:  252:free(q_zer);
+        -:  253:
+        -:  254:// set new t and q
+ 19031959:  255:t = t_new;
+ 19031959:  256:q = q_new;
+        -:  257:
+        -:  258:
+ 19031959:  259:}//---------------- loop
+        -:  260:
+        -:  261:////////////////////////////////////////////////////
+        -:  262:	return 0;
+        -:  263:}
+        -:  264:// TODO:It works :) optimise by checking operf ./fm, opreport -rl. 
+        -:  265:// is it the function reduce itself that is slow, or is it called to often?

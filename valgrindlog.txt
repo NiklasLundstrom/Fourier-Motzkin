@@ -1,0 +1,1776 @@
+==4647== Memcheck, a memory error detector
+==4647== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==4647== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==4647== Command: ./fm
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x44EE36: __linkin_atfork (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x428CE3: ptmalloc_init.part.7 (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x42906D: malloc_hook_ini (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x487F32: _dl_get_origin (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44FBCE: _dl_non_dynamic_init (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4509C7: __libc_init_first (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412B11: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x481926: fillin_rpath (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x482124: _dl_init_paths (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4500AC: _dl_non_dynamic_init (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4509C7: __libc_init_first (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412B11: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x481926: fillin_rpath (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x482124: _dl_init_paths (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4500AC: _dl_non_dynamic_init (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4509C7: __libc_init_first (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412B11: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x41AFF4: fclose (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40176A: read_ref (main.c:258)
+==4647==    by 0x40176A: main (main.c:351)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402288: fm (fast.c:220)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402288: fm (fast.c:220)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402292: fm (fast.c:221)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402292: fm (fast.c:221)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402763: fm (fast.c:256)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402763: fm (fast.c:256)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402777: fm (fast.c:258)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402777: fm (fast.c:258)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x41AFF4: fclose (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40319F: check (main.c:161)
+==4647==    by 0x40319F: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40249A: fm (fast.c:328)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40249A: fm (fast.c:328)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024A4: fm (fast.c:329)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024A4: fm (fast.c:329)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024B8: fm (fast.c:331)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024B8: fm (fast.c:331)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402878: fm (fast.c:300)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402864: fm (fast.c:298)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402864: fm (fast.c:298)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402878: fm (fast.c:300)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402878: fm (fast.c:300)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x4022DE: fm (fast.c:307)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024AE: fm (fast.c:330)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024AE: fm (fast.c:330)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x40213F: fm (fast.c:171)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x402151: fm (fast.c:172)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40286E: fm (fast.c:299)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40286E: fm (fast.c:299)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x40210F: fm (fast.c:169)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x402121: fm (fast.c:170)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40285A: fm (fast.c:297)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40285A: fm (fast.c:297)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402292: fm (fast.c:221)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x425BF0: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x4022DE: fm (fast.c:307)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402777: fm (fast.c:258)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402763: fm (fast.c:256)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x4022F6: fm (fast.c:308)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402864: fm (fast.c:298)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402550: fm (fast.c:343)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402550: fm (fast.c:343)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40255A: fm (fast.c:344)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40255A: fm (fast.c:344)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024A4: fm (fast.c:329)
+==4647==    by 0x403122: check (main.c:127)
+==4647==    by 0x403122: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x41AFF4: fclose (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x403101: check (main.c:125)
+==4647==    by 0x403101: search (main.c:196)
+==4647==    by 0x40101C: main (main.c:355)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x446DED: __strncpy_sse2_unaligned (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40119B: strncpy (string3.h:120)
+==4647==    by 0x40119B: check (main.c:83)
+==4647==    by 0x40119B: eval (main.c:226)
+==4647==    by 0x40119B: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created by a stack allocation
+==4647==    at 0x400EF8: main (main.c:300)
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402292: fm (fast.c:221)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402292: fm (fast.c:221)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40249A: fm (fast.c:328)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40249A: fm (fast.c:328)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024A4: fm (fast.c:329)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024A4: fm (fast.c:329)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024AE: fm (fast.c:330)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024AE: fm (fast.c:330)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024B8: fm (fast.c:331)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024B8: fm (fast.c:331)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402878: fm (fast.c:300)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402292: fm (fast.c:221)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402292: fm (fast.c:221)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40249A: fm (fast.c:328)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40249A: fm (fast.c:328)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024A4: fm (fast.c:329)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024A4: fm (fast.c:329)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024AE: fm (fast.c:330)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024AE: fm (fast.c:330)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024B8: fm (fast.c:331)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4024B8: fm (fast.c:331)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402878: fm (fast.c:300)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402288: fm (fast.c:220)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402288: fm (fast.c:220)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402550: fm (fast.c:343)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402550: fm (fast.c:343)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40255A: fm (fast.c:344)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40255A: fm (fast.c:344)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40285A: fm (fast.c:297)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40285A: fm (fast.c:297)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402864: fm (fast.c:298)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402864: fm (fast.c:298)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x401FC9: fm (fast.c:135)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x401FE1: fm (fast.c:136)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x40217C: fm (fast.c:173)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x425AF7: _int_malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x427CCC: malloc (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402A7A: __check_malloc (malloc.c:67)
+==4647==    by 0x402A7A: __check_calloc (malloc.c:87)
+==4647==    by 0x40218E: fm (fast.c:174)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402288: fm (fast.c:220)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402288: fm (fast.c:220)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402550: fm (fast.c:343)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402550: fm (fast.c:343)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40255A: fm (fast.c:344)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40255A: fm (fast.c:344)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40285A: fm (fast.c:297)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x40285A: fm (fast.c:297)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402864: fm (fast.c:298)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402864: fm (fast.c:298)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x41AFF4: fclose (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x4015DF: check (main.c:161)
+==4647==    by 0x4015DF: eval (main.c:226)
+==4647==    by 0x4015DF: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402777: fm (fast.c:258)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402777: fm (fast.c:258)
+==4647==    by 0x40137F: check (main.c:127)
+==4647==    by 0x40137F: eval (main.c:226)
+==4647==    by 0x40137F: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x424589: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402777: fm (fast.c:258)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x4245EF: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402777: fm (fast.c:258)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== Conditional jump or move depends on uninitialised value(s)
+==4647==    at 0x423B88: malloc_consolidate (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x424B58: _int_free (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x402288: fm (fast.c:220)
+==4647==    by 0x4013E0: check (main.c:133)
+==4647==    by 0x4013E0: eval (main.c:226)
+==4647==    by 0x4013E0: main (main.c:364)
+==4647==    by 0x412B9B: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647==  Uninitialised value was created
+==4647==    at 0x47EABC: brk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x44C6F4: sbrk (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412E43: __libc_setup_tls (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x412AAD: __libc_start_main (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0x401E06: ??? (in /home/niklas/Documents/Algimp/project/fast/fm)
+==4647==    by 0xFFEFFFE37: ???
+==4647== 
+==4647== 
+==4647== More than 100 errors detected.  Subsequent errors
+==4647== will still be recorded, but in less detail than before.
+welcome to the fourier-motzkin test program. use fm -h for help
+
+will use reference count file "ref.1"
+passed 300 tests (no failures)
+now timing 10 tests...please wait 10 s
+       input          ref        count        ratio
+        A3.0       704553          863        0.001
+        A3.1      3822949         3726        0.001
+        A3.2       483722          640        0.001
+        A3.3      1379508         1198        0.001
+        A3.4       186284          263        0.001
+        A3.5        79999          150        0.002
+        A3.6       429009          583        0.001
+        A3.7      3386974         3729        0.001
+        A3.8       180373          325        0.002
+        A3.9       117196          187        0.002
+geometric mean of ratios = 0.00 (higher is better)
+==4647== 
+==4647== HEAP SUMMARY:
+==4647==     in use at exit: 0 bytes in 0 blocks
+==4647==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==4647== 
+==4647== All heap blocks were freed -- no leaks are possible
+==4647== 
+==4647== For counts of detected and suppressed errors, rerun with: -v
+==4647== ERROR SUMMARY: 309292 errors from 100 contexts (suppressed: 0 from 0)
